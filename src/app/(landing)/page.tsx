@@ -8,18 +8,22 @@ import {
   FaEnvelope,
   FaXTwitter,
 } from "react-icons/fa6";
+import Hero from "@/components/Hero";
+import SignUp from "@/components/SignUp";
 
 export default function page() {
   return (
-    <div>
+    <div className="">
       <Navbar />
       <Hero />
+      {/* <Hero2 /> */}
       <SeconderyHero />
       <HighlightSection />
       <WhyUs />
       <Gallery />
       <UpcomingEvents />
-      <SignUp />
+      <SignUp2 />
+      <SignUp/>
       <Footer />
     </div>
   );
@@ -147,7 +151,7 @@ function Footer() {
   );
 }
 
-function SignUp() {
+function SignUp2() {
   return (
     <>
       <div className="flex justify-between mx-auto my-20 px-10 bg-green-500">
@@ -607,104 +611,95 @@ function Gallery() {
 
 function WhyUs() {
   return (
-    <div className="flex mx-auto my-20 px-10">
-      <div className="prose px-10 my-auto">
-        <h1>Why us?</h1>
-
-        <p>
-          Gyan Ganga has best in-className infrastructure, including the
-          state-of-the-art facilities and a Colossal library. As a
-          multi-disciplinary School Currently more than 14000 students are
-          enrolled across all in Gyan Ganga. A well-qualified team of 150
-          faculty members is the asset of the School.
+    <>
+      <div className="flex flex-col md:flex-row mx-auto my-20 px-6 md:px-16 max-w-7xl gap-10 items-center min-w-3xl">
+        <div className="prose px-0 md:px-10 my-auto flex-1 min-w-lg">
+          <h1 className="text-3xl font-bold mb-4">Why Us?</h1>
+          <p className="mb-6 text-gray-700">
+          Gyan Ganga has best-in-class infrastructure, including state-of-the-art facilities and a colossal library. As a multi-disciplinary school, currently more than 14,000 students are enrolled across all in Gyan Ganga. A well-qualified team of 150 faculty members is the asset of the school.
         </p>
-        <div>
-          <Link href="#">
-            <button>Learn More</button>
-          </Link>
-        </div>
+        <a href="#">
+          <button className="bg-[#006d70] text-white px-6 py-2 rounded-md hover:bg-[#005a5c] transition font-semibold">
+            Learn More
+          </button>
+        </a>
       </div>
 
-      <div>
-        <div>
-          <Image
-            src="/images/medal.png"
-            alt="School Building"
-            width={40}
-            height={40}
-            className="object-cover"
-          />
-
-          <h2>30+</h2>
-          <p>Year of Education legacy</p>
-        </div>
-
-        <div>
-          <Image
-            src="/images/Teacher.png"
-            alt="School Building"
-            width={40}
-            height={40}
-            className="object-cover"
-          />
-
-          <h2>1:40</h2>
-          <p>teacher section ratio</p>
-        </div>
-
-        <div>
-          <Image
-            src="/images/Infrastructure.png"
-            alt="School Building"
-            width={40}
-            height={40}
-            className="object-cover"
-          />
-
-          <h2>state of art </h2>
-          <p>Infrastructure</p>
-        </div>
-
-        <div>
-          <Image
-            src="/images/Abilities.png"
-            alt="School Building"
-            width={40}
-            height={40}
-            className="object-cover"
-          />
-
-          <h2>Holistic</h2>
-          <p>Development</p>
-        </div>
-
-        <div>
-          <Image
-            src="/images/Sports.png"
-            alt="School Building"
-            width={40}
-            height={40}
-            className="object-cover"
-          />
-
-          <h2>16081 m2</h2>
-          <p>campus</p>
-        </div>
-
-        <div>
-          <Image
-            src="/images/students.png"
-            alt="School Building"
-            width={40}
-            height={40}
-            className="object-cover"
-          />
-
-          <h2>1600+</h2>
-          <p>students</p>
-        </div>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 flex-1 ">
+      <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
+        <Image
+          src="/images/medal.png"
+          alt="Education Legacy"
+          width={40}
+          height={40}
+          className="object-cover mb-2"
+        />
+        <h2 className="text-xl font-bold text-[#006d70]">30+</h2>
+        <p className="text-sm text-gray-600 text-center">Years of Education Legacy</p>
       </div>
-    </div>
+
+      <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
+        <Image
+          src="/images/Teacher.png"
+          alt="Teacher Section Ratio"
+          width={40}
+          height={40}
+          className="object-cover mb-2"
+        />
+        <h2 className="text-xl font-bold text-[#006d70]">1:40</h2>
+        <p className="text-sm text-gray-600 text-center">Teacher Section Ratio</p>
+      </div>
+
+      <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
+        <Image
+          src="/images/Infrastructure.png"
+          alt="Infrastructure"
+          width={40}
+          height={40}
+          className="object-cover mb-2"
+        />
+        <h2 className="text-xl font-bold text-[#006d70]">State of Art</h2>
+        <p className="text-sm text-gray-600 text-center">Infrastructure</p>
+      </div>
+
+      <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
+        <Image
+          src="/images/Abilities.png"
+          alt="Holistic Development"
+          width={40}
+          height={40}
+          className="object-cover mb-2"
+        />
+        <h2 className="text-xl font-bold text-[#006d70]">Holistic</h2>
+        <p className="text-sm text-gray-600 text-center">Development</p>
+      </div>
+
+      <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
+        <Image
+          src="/images/Sports.png"
+          alt="Campus"
+          width={40}
+          height={40}
+          className="object-cover mb-2"
+        />
+        <h2 className="text-xl font-bold text-[#006d70]">16081 m²</h2>
+        <p className="text-sm text-gray-600 text-center">Campus</p>
+      </div>
+
+      <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
+        <Image
+          src="/images/students.png"
+          alt="Students"
+          width={40}
+          height={40}
+          className="object-cover mb-2"
+        />
+        <h2 className="text-xl font-bold text-[#006d70]">1600+</h2>
+        <p className="text-sm text-gray-600 text-center">Students</p>
+      </div>
+      </div>
+      </div>
+    </>
   );
 }
 
@@ -750,7 +745,7 @@ function SeconderyHero() {
   );
 }
 
-function Hero() {
+function Hero2() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center bg-blue-200">
       <Image

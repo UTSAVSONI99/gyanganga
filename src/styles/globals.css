@@ -134,3 +134,100 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Overlay and rotating image for Hero carousel */
+.overlay-text h2,
+.overlay-text p {
+  /* ensure text sits above the carousel images */
+  z-index: 30;
+}
+
+.rotate-container,
+.rotate-container * {
+  z-index: 40;
+}
+
+.rotating-image {
+  animation: spin-slow 12s linear infinite;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.85);
+  padding: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Ensure overlay text is readable over various images */
+.overlay-text h2 {
+  text-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+.overlay-text p {
+  text-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+/* Make sure pointer interactions still work for carousel controls */
+.relative .pointer-events-none > * {
+  pointer-events: auto;
+}
+
+/* pause-on-hover utility */
+.pause-rotation .rotating-image:hover,
+.pause-rotation:hover .rotating-image {
+  animation-play-state: paused;
+}
+
+/* Dual carousel layout enhancements */
+.dual-carousel-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background carousel styling */
+.bg-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.bg-carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+  z-index: 1;
+}
+
+/* Glassmorphism effect for secondary carousel */
+.glass-carousel {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Text shadows for better contrast on carousel backgrounds */
+.hero-text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive carousel heights */
+@media (max-width: 768px) {
+  .dual-carousel-hero {
+    min-height: 70vh;
+  }
+}
+
+@media (min-width: 769px) {
+  .dual-carousel-hero {
+    min-height: 80vh;
+  }
+}
