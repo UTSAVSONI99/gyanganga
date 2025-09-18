@@ -8,22 +8,29 @@ import {
   FaEnvelope,
   FaXTwitter,
 } from "react-icons/fa6";
-import Hero from "@/components/Hero";
+// import Hero from "@/components/Hero";
 import SignUp from "@/components/SignUp";
+import Carousel from "@/app/(landing)/Carousel";
+import About from "@/app/(landing)/About";
+import Gallery from "@/app/(landing)/Gallery";
+import WhyUs from "@/app/(landing)/WhyUs";
 
 export default function page() {
   return (
     <div className="">
       <Navbar />
-      <Hero />
+      <Carousel />
+      {/* <Hero />  */}
       {/* <Hero2 /> */}
-      <SeconderyHero />
+      <About />
+
       <HighlightSection />
+
       <WhyUs />
       <Gallery />
       <UpcomingEvents />
       <SignUp2 />
-      <SignUp/>
+      <SignUp />
       <Footer />
     </div>
   );
@@ -314,8 +321,8 @@ function UpcomingEvents() {
                       aria-hidden="true"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M12 3v12m0 0l4-4m-4 4l-4-4M21 21H3"
                       />
                     </svg>
@@ -553,155 +560,163 @@ function UpcomingEvents() {
   );
 }
 
-function Gallery() {
-  return (
-    <>
-      <h1 className="text-center my-10 text-4xl font-bold">Gallery</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4  mx-10 mb-20">
-        <Image
-          src="/images/gal-1.webp"
-          alt="Gallery"
-          width={500}
-          height={500}
-          className=" object-cover"
-        />
-        <Image
-          src="/images/gal-1.webp"
-          alt="Gallery"
-          width={500}
-          height={500}
-          className=" object-cover"
-        />
+// function Gallery() {
+//   return (
+//     <>
+//       <h1 className="text-center my-10 text-4xl font-bold">Gallery</h1>
+//       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4  mx-10 mb-20">
+//         <Image
+//           src="/images/gal-1.webp"
+//           alt="Gallery"
+//           width={500}
+//           height={500}
+//           className=" object-cover"
+//         />
+//         <Image
+//           src="/images/gal-1.webp"
+//           alt="Gallery"
+//           width={500}
+//           height={500}
+//           className=" object-cover"
+//         />
 
-        <Image
-          src="/images/gal-1.webp"
-          alt="Gallery"
-          width={500}
-          height={500}
-          className=" object-cover"
-        />
+//         <Image
+//           src="/images/gal-1.webp"
+//           alt="Gallery"
+//           width={500}
+//           height={500}
+//           className=" object-cover"
+//         />
 
-        <Image
-          src="/images/gal-1.webp"
-          alt="Gallery"
-          width={500}
-          height={500}
-          className=" object-cover"
-        />
+//         <Image
+//           src="/images/gal-1.webp"
+//           alt="Gallery"
+//           width={500}
+//           height={500}
+//           className=" object-cover"
+//         />
 
-        <Image
-          src="/images/gal-1.webp"
-          alt="Gallery"
-          width={500}
-          height={500}
-          className=" object-cover"
-        />
+//         <Image
+//           src="/images/gal-1.webp"
+//           alt="Gallery"
+//           width={500}
+//           height={500}
+//           className=" object-cover"
+//         />
 
-        <Image
-          src="/images/gal-1.webp"
-          alt="Gallery"
-          width={500}
-          height={500}
-          className=" object-cover"
-        />
-      </div>
-    </>
-  );
-}
+//         <Image
+//           src="/images/gal-1.webp"
+//           alt="Gallery"
+//           width={500}
+//           height={500}
+//           className=" object-cover"
+//         />
+//       </div>
+//     </>
+//   );
+// }
 
-function WhyUs() {
-  return (
-    <>
-      <div className="flex flex-col md:flex-row mx-auto my-20 px-6 md:px-16 max-w-7xl gap-10 items-center min-w-3xl">
-        <div className="prose px-0 md:px-10 my-auto flex-1 min-w-lg">
-          <h1 className="text-3xl font-bold mb-4">Why Us?</h1>
-          <p className="mb-6 text-gray-700">
-          Gyan Ganga has best-in-class infrastructure, including state-of-the-art facilities and a colossal library. As a multi-disciplinary school, currently more than 14,000 students are enrolled across all in Gyan Ganga. A well-qualified team of 150 faculty members is the asset of the school.
-        </p>
-        <a href="#">
-          <button className="bg-[#006d70] text-white px-6 py-2 rounded-md hover:bg-[#005a5c] transition font-semibold">
-            Learn More
-          </button>
-        </a>
-      </div>
+// function WhyUs() {
+//   return (
+//     <>
+//       <div className="flex flex-col md:flex-row mx-auto my-20 px-6 md:px-16 max-w-7xl gap-10 items-center min-w-3xl">
+//         <div className="prose px-0 md:px-10 my-auto flex-1 min-w-lg">
+//           <h1 className="text-3xl font-bold mb-4">Why Us?</h1>
+//           <p className="mb-6 text-gray-700">
+//             Gyan Ganga has best-in-class infrastructure, including
+//             state-of-the-art facilities and a colossal library. As a
+//             multi-disciplinary school, currently more than 14,000 students are
+//             enrolled across all in Gyan Ganga. A well-qualified team of 150
+//             faculty members is the asset of the school.
+//           </p>
+//           <a href="#">
+//             <button className="bg-[#006d70] text-white px-6 py-2 rounded-md hover:bg-[#005a5c] transition font-semibold">
+//               Learn More
+//             </button>
+//           </a>
+//         </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 flex-1 ">
-      <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
-        <Image
-          src="/images/medal.png"
-          alt="Education Legacy"
-          width={40}
-          height={40}
-          className="object-cover mb-2"
-        />
-        <h2 className="text-xl font-bold text-[#006d70]">30+</h2>
-        <p className="text-sm text-gray-600 text-center">Years of Education Legacy</p>
-      </div>
+//         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 flex-1 ">
+//           <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
+//             <Image
+//               src="/images/medal.png"
+//               alt="Education Legacy"
+//               width={40}
+//               height={40}
+//               className="object-cover mb-2"
+//             />
+//             <h2 className="text-xl font-bold text-[#006d70]">30+</h2>
+//             <p className="text-sm text-gray-600 text-center">
+//               Years of Education Legacy
+//             </p>
+//           </div>
 
-      <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
-        <Image
-          src="/images/Teacher.png"
-          alt="Teacher Section Ratio"
-          width={40}
-          height={40}
-          className="object-cover mb-2"
-        />
-        <h2 className="text-xl font-bold text-[#006d70]">1:40</h2>
-        <p className="text-sm text-gray-600 text-center">Teacher Section Ratio</p>
-      </div>
+//           <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
+//             <Image
+//               src="/images/Teacher.png"
+//               alt="Teacher Section Ratio"
+//               width={40}
+//               height={40}
+//               className="object-cover mb-2"
+//             />
+//             <h2 className="text-xl font-bold text-[#006d70]">1:40</h2>
+//             <p className="text-sm text-gray-600 text-center">
+//               Teacher Section Ratio
+//             </p>
+//           </div>
 
-      <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
-        <Image
-          src="/images/Infrastructure.png"
-          alt="Infrastructure"
-          width={40}
-          height={40}
-          className="object-cover mb-2"
-        />
-        <h2 className="text-xl font-bold text-[#006d70]">State of Art</h2>
-        <p className="text-sm text-gray-600 text-center">Infrastructure</p>
-      </div>
+//           <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
+//             <Image
+//               src="/images/Infrastructure.png"
+//               alt="Infrastructure"
+//               width={40}
+//               height={40}
+//               className="object-cover mb-2"
+//             />
+//             <h2 className="text-xl font-bold text-[#006d70]">State of Art</h2>
+//             <p className="text-sm text-gray-600 text-center">Infrastructure</p>
+//           </div>
 
-      <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
-        <Image
-          src="/images/Abilities.png"
-          alt="Holistic Development"
-          width={40}
-          height={40}
-          className="object-cover mb-2"
-        />
-        <h2 className="text-xl font-bold text-[#006d70]">Holistic</h2>
-        <p className="text-sm text-gray-600 text-center">Development</p>
-      </div>
+//           <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
+//             <Image
+//               src="/images/Abilities.png"
+//               alt="Holistic Development"
+//               width={40}
+//               height={40}
+//               className="object-cover mb-2"
+//             />
+//             <h2 className="text-xl font-bold text-[#006d70]">Holistic</h2>
+//             <p className="text-sm text-gray-600 text-center">Development</p>
+//           </div>
 
-      <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
-        <Image
-          src="/images/Sports.png"
-          alt="Campus"
-          width={40}
-          height={40}
-          className="object-cover mb-2"
-        />
-        <h2 className="text-xl font-bold text-[#006d70]">16081 m²</h2>
-        <p className="text-sm text-gray-600 text-center">Campus</p>
-      </div>
+//           <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
+//             <Image
+//               src="/images/Sports.png"
+//               alt="Campus"
+//               width={40}
+//               height={40}
+//               className="object-cover mb-2"
+//             />
+//             <h2 className="text-xl font-bold text-[#006d70]">16081 m²</h2>
+//             <p className="text-sm text-gray-600 text-center">Campus</p>
+//           </div>
 
-      <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
-        <Image
-          src="/images/students.png"
-          alt="Students"
-          width={40}
-          height={40}
-          className="object-cover mb-2"
-        />
-        <h2 className="text-xl font-bold text-[#006d70]">1600+</h2>
-        <p className="text-sm text-gray-600 text-center">Students</p>
-      </div>
-      </div>
-      </div>
-    </>
-  );
-}
+//           <div className="flex flex-col items-center bg-gradient-to-bl from-slate-50 to-slate-100 rounded-xl  shadow p-4">
+//             <Image
+//               src="/images/students.png"
+//               alt="Students"
+//               width={40}
+//               height={40}
+//               className="object-cover mb-2"
+//             />
+//             <h2 className="text-xl font-bold text-[#006d70]">1600+</h2>
+//             <p className="text-sm text-gray-600 text-center">Students</p>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
 
 function HighlightSection() {
   return (
@@ -719,33 +734,7 @@ function HighlightSection() {
   );
 }
 
-function SeconderyHero() {
-  return (
-    <div className="flex  px-20 flex-col md:flex-row items-center justify-between bg-gray-100">
-      <div className="prose p-10 my-auto">
-        <h2>Excellence Through Education</h2>
-        <p>
-          Gyan Ganga Educational Academy stands as a distinguished name in
-          education, shaping the future of young minds with a legacy of academic
-          excellence, innovation, and holistic development. Over the years, it
-          has impacted thousands of students across diverse backgrounds,
-          nurturing talent and building character. As a leading institution in
-          Raipur, Chhattisgarh, Gyan Ganga continues to set new benchmarks in
-          schooling, driven by a vision to empower learners for global success.
-        </p>
-        <Link href="#">
-          <button>Learn More</button>
-        </Link>
-      </div>
-      F
-      <div>
-        <img src="/images/shri-UK-Shandilya-img-with-bg-element.png" />
-      </div>
-    </div>
-  );
-}
-
-function Hero2() {
++function Hero2() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center bg-blue-200">
       <Image
@@ -759,4 +748,4 @@ function Hero2() {
       <p>Your one-stop solution for all your needs.</p>
     </div>
   );
-}
+};

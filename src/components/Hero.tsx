@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 const M: any = motion;
-import Carousel from "@/components/Carousel";
+import Carousel from "@/app/(landing)/Carousel";
 import Link from "next/link";
 
 export default function Hero() {
@@ -23,7 +23,11 @@ export default function Hero() {
       {/* Background Carousel - Full Width */}
       <div className="absolute inset-0 z-0 top-0 left-0 w-full h-full bottom-0">
         {/* <Carousel images={backgroundImages} /> */}
-        <img src="/images/gyanimg-1.webp" alt="Background" className="w-full h-full object-cover" />
+        <img
+          src="/images/gyanimg-1.webp"
+          alt="Background"
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
@@ -40,13 +44,18 @@ export default function Hero() {
                 className="space-y-6"
               >
                 <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-white">
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-green-400">Gyan Ganga</span>
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-green-400">
+                    Gyan Ganga
+                  </span>
                   <br />
-                  <span className="text-white">Shaping Futures, Inspiring Leaders</span>
+                  <span className="text-white">
+                    Shaping Futures, Inspiring Leaders
+                  </span>
                 </h1>
 
                 <p className="text-white/90 max-w-2xl text-lg">
-                  We combine academic excellence, modern facilities, and holistic development to build confident, curious learners.
+                  We combine academic excellence, modern facilities, and
+                  holistic development to build confident, curious learners.
                   Join our campus tour to experience the difference.
                 </p>
 
@@ -64,11 +73,23 @@ export default function Hero() {
 
                 <div className="flex items-center gap-4 mt-8">
                   <Link href="/book" className="inline-block">
-                    <M.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }} className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-semibold shadow-lg">Book a Visit</M.a>
+                    <M.a
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-semibold shadow-lg"
+                    >
+                      Book a Visit
+                    </M.a>
                   </Link>
 
                   <Link href="#about" className="inline-block">
-                    <M.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }} className="inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold transition-colors">Learn More</M.a>
+                    <M.a
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold transition-colors"
+                    >
+                      Learn More
+                    </M.a>
                   </Link>
                 </div>
               </M.div>
@@ -92,14 +113,20 @@ export default function Hero() {
 
                       {/* Rotating logo */}
                       <div className="absolute left-4 top-4 rotate-container pause-rotation">
-                        <img src="/images/logo.png" alt="Gyan Ganga logo" className="w-16 h-16 object-contain rotating-image" />
+                        <img
+                          src="/images/logo.png"
+                          alt="Gyan Ganga logo"
+                          className="w-16 h-16 object-contain rotating-image"
+                        />
                       </div>
 
                       {/* Bottom overlay text */}
                       <div className="absolute bottom-4 left-4 right-4">
                         <div className="text-white">
                           <h3 className="text-lg font-bold">Campus Life</h3>
-                          <p className="text-sm text-white/90">Excellence · Sports · Arts · Growth</p>
+                          <p className="text-sm text-white/90">
+                            Excellence · Sports · Arts · Growth
+                          </p>
                         </div>
                       </div>
                     </div>

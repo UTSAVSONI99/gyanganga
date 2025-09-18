@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+// import Hero from "@/components/Hero";
 import SecondaryHero from "@/components/SecondaryHero";
 import HighlightSection from "@/components/HighlightSection";
 import WhyUs from "@/components/WhyUs";
@@ -13,7 +13,7 @@ export default function page() {
   return (
     <div>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
       <SecondaryHero />
       <HighlightSection />
       <WhyUs />
