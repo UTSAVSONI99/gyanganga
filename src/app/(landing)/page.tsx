@@ -15,6 +15,7 @@ import About from "@/app/(landing)/About";
 import Gallery from "@/app/(landing)/Gallery";
 import WhyUs from "@/app/(landing)/WhyUs";
 import UpcomingEvents from "@/app/(landing)/Events";
+import SiteFooter from "@/components/SiteFooter";
 
 export default function page() {
   return (
@@ -30,9 +31,9 @@ export default function page() {
       <WhyUs />
       <Gallery />
       <UpcomingEvents />
-      <SignUp2 />
+      {/* <SignUp2 /> */}
       <SignUp />
-      <Footer />
+      <SiteFooter />
     </div>
   );
 }
