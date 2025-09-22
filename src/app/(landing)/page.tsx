@@ -14,6 +14,7 @@ import Carousel from "@/app/(landing)/Carousel";
 import About from "@/app/(landing)/About";
 import Gallery from "@/app/(landing)/Gallery";
 import WhyUs from "@/app/(landing)/WhyUs";
+import UpcomingEvents from "@/app/(landing)/Events";
 
 export default function page() {
   return (
@@ -244,321 +245,321 @@ function SignUp2() {
   );
 }
 
-function UpcomingEvents() {
-  return (
-    <div className="my-20 flex">
-      <div>
-        <Image
-          src="/images/events.png"
-          alt="School Building"
-          width={400}
-          height={600}
-          className="object-cover"
-        />
-      </div>
-      <div className="max-w-2xl mx-auto p-4 ">
-        <h2 className="text-lg font-semibold mb-4">Upcoming Events</h2>
+// function UpcomingEvents() {
+//   return (
+//     <div className="my-20 flex">
+//       <div>
+//         <Image
+//           src="/images/events.png"
+//           alt="School Building"
+//           width={400}
+//           height={600}
+//           className="object-cover"
+//         />
+//       </div>
+//       <div className="max-w-2xl mx-auto p-4 ">
+//         <h2 className="text-lg font-semibold mb-4">Upcoming Events</h2>
 
-        <ul className="space-y-3 flex flex-col">
-          <li className="flex flex-col  pb-2">
-            <span>Gyan Ganga Sports Day</span>
-            <span className="text-gray-600">July 21, 2025</span>
-          </li>
-          <li className="flex flex-col pb-2">
-            <span>Inter School Debate</span>
-            <span className="text-gray-600">July 21, 2025</span>
-          </li>
-          <li className="flex flex-col pb-2">
-            <span>Hindi Essay Competition</span>
-            <span className="text-gray-600">July 21, 2025</span>
-          </li>
-          <li className="flex flex-col pb-2">
-            <span>Debate Competition</span>
-            <span className="text-gray-600">July 21, 2025</span>
-          </li>
-          <li className="flex flex-col pb-2">
-            <span>Gyan Ganga Sports Day</span>
-            <span className="text-gray-600">July 21, 2025</span>
-          </li>
-        </ul>
+//         <ul className="space-y-3 flex flex-col">
+//           <li className="flex flex-col  pb-2">
+//             <span>Gyan Ganga Sports Day</span>
+//             <span className="text-gray-600">July 21, 2025</span>
+//           </li>
+//           <li className="flex flex-col pb-2">
+//             <span>Inter School Debate</span>
+//             <span className="text-gray-600">July 21, 2025</span>
+//           </li>
+//           <li className="flex flex-col pb-2">
+//             <span>Hindi Essay Competition</span>
+//             <span className="text-gray-600">July 21, 2025</span>
+//           </li>
+//           <li className="flex flex-col pb-2">
+//             <span>Debate Competition</span>
+//             <span className="text-gray-600">July 21, 2025</span>
+//           </li>
+//           <li className="flex flex-col pb-2">
+//             <span>Gyan Ganga Sports Day</span>
+//             <span className="text-gray-600">July 21, 2025</span>
+//           </li>
+//         </ul>
 
-        <p className="mt-4 text-sm text-gray-700">
-          📢 Join us from{" "}
-          <span className="font-semibold">2:00 PM to 4:00 PM</span>
-          at the <span className="font-semibold">School Auditorium</span> and
-          watch our young minds engage in powerful activities.
-        </p>
-      </div>
+//         <p className="mt-4 text-sm text-gray-700">
+//           📢 Join us from{" "}
+//           <span className="font-semibold">2:00 PM to 4:00 PM</span>
+//           at the <span className="font-semibold">School Auditorium</span> and
+//           watch our young minds engage in powerful activities.
+//         </p>
+//       </div>
 
-      <div className="max-w-4xl mx-auto p-4">
-        <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200">
-          <div className="flex flex-col md:flex-row">
-            <aside className="md:w-1/3 p-6 bg-gradient-to-br from-blue-50 to-white">
-              <h2 className="text-xl font-semibold text-slate-800 mb-4">
-                IMPORTANT
-              </h2>
+//       <div className="max-w-4xl mx-auto p-4">
+//         <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200">
+//           <div className="flex flex-col md:flex-row">
+//             <aside className="md:w-1/3 p-6 bg-gradient-to-br from-blue-50 to-white">
+//               <h2 className="text-xl font-semibold text-slate-800 mb-4">
+//                 IMPORTANT
+//               </h2>
 
-              <ul className="space-y-3">
-                <li className="flex items-center justify-between p-3 rounded-lg bg-white/60 border border-gray-100">
-                  <div>
-                    <p className="text-sm font-medium text-slate-700">
-                      Brochure
-                    </p>
-                    <p className="text-xs text-slate-500">Download</p>
-                  </div>
-                  <a
-                    href="#"
-                    className="inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md border bg-white hover:bg-slate-50 shadow-sm"
-                    aria-label="Download Brochure"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 3v12m0 0l4-4m-4 4l-4-4M21 21H3"
-                      />
-                    </svg>
-                    Download
-                  </a>
-                </li>
+//               <ul className="space-y-3">
+//                 <li className="flex items-center justify-between p-3 rounded-lg bg-white/60 border border-gray-100">
+//                   <div>
+//                     <p className="text-sm font-medium text-slate-700">
+//                       Brochure
+//                     </p>
+//                     <p className="text-xs text-slate-500">Download</p>
+//                   </div>
+//                   <a
+//                     href="#"
+//                     className="inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md border bg-white hover:bg-slate-50 shadow-sm"
+//                     aria-label="Download Brochure"
+//                   >
+//                     <svg
+//                       xmlns="http://www.w3.org/2000/svg"
+//                       className="h-4 w-4"
+//                       fill="none"
+//                       viewBox="0 0 24 24"
+//                       stroke="currentColor"
+//                       stroke-width="2"
+//                       aria-hidden="true"
+//                     >
+//                       <path
+//                         strokeLinecap="round"
+//                         strokeLinejoin="round"
+//                         d="M12 3v12m0 0l4-4m-4 4l-4-4M21 21H3"
+//                       />
+//                     </svg>
+//                     Download
+//                   </a>
+//                 </li>
 
-                <li className="flex items-center justify-between p-3 rounded-lg bg-white/60 border border-gray-100">
-                  <div>
-                    <p className="text-sm font-medium text-slate-700">
-                      Prospectus
-                    </p>
-                    <p className="text-xs text-slate-500">Download</p>
-                  </div>
-                  <a
-                    href="#"
-                    className="inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md border bg-white hover:bg-slate-50 shadow-sm"
-                    aria-label="Download Prospectus"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 3v12m0 0l4-4m-4 4l-4-4M21 21H3"
-                      />
-                    </svg>
-                    Download
-                  </a>
-                </li>
+//                 <li className="flex items-center justify-between p-3 rounded-lg bg-white/60 border border-gray-100">
+//                   <div>
+//                     <p className="text-sm font-medium text-slate-700">
+//                       Prospectus
+//                     </p>
+//                     <p className="text-xs text-slate-500">Download</p>
+//                   </div>
+//                   <a
+//                     href="#"
+//                     className="inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md border bg-white hover:bg-slate-50 shadow-sm"
+//                     aria-label="Download Prospectus"
+//                   >
+//                     <svg
+//                       xmlns="http://www.w3.org/2000/svg"
+//                       className="h-4 w-4"
+//                       fill="none"
+//                       viewBox="0 0 24 24"
+//                       stroke="currentColor"
+//                       stroke-width="2"
+//                       aria-hidden="true"
+//                     >
+//                       <path
+//                         stroke-linecap="round"
+//                         stroke-linejoin="round"
+//                         d="M12 3v12m0 0l4-4m-4 4l-4-4M21 21H3"
+//                       />
+//                     </svg>
+//                     Download
+//                   </a>
+//                 </li>
 
-                <li className="flex items-center justify-between p-3 rounded-lg bg-white/60 border border-gray-100">
-                  <div>
-                    <p className="text-sm font-medium text-slate-700">
-                      Academic Calendar
-                    </p>
-                    <p className="text-xs text-slate-500">Download</p>
-                  </div>
-                  <a
-                    href="#"
-                    className="inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md border bg-white hover:bg-slate-50 shadow-sm"
-                    aria-label="Download Academic Calendar"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 3v12m0 0l4-4m-4 4l-4-4M21 21H3"
-                      />
-                    </svg>
-                    Download
-                  </a>
-                </li>
+//                 <li className="flex items-center justify-between p-3 rounded-lg bg-white/60 border border-gray-100">
+//                   <div>
+//                     <p className="text-sm font-medium text-slate-700">
+//                       Academic Calendar
+//                     </p>
+//                     <p className="text-xs text-slate-500">Download</p>
+//                   </div>
+//                   <a
+//                     href="#"
+//                     className="inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md border bg-white hover:bg-slate-50 shadow-sm"
+//                     aria-label="Download Academic Calendar"
+//                   >
+//                     <svg
+//                       xmlns="http://www.w3.org/2000/svg"
+//                       className="h-4 w-4"
+//                       fill="none"
+//                       viewBox="0 0 24 24"
+//                       stroke="currentColor"
+//                       stroke-width="2"
+//                       aria-hidden="true"
+//                     >
+//                       <path
+//                         stroke-linecap="round"
+//                         stroke-linejoin="round"
+//                         d="M12 3v12m0 0l4-4m-4 4l-4-4M21 21H3"
+//                       />
+//                     </svg>
+//                     Download
+//                   </a>
+//                 </li>
 
-                <li className="flex items-center justify-between p-3 rounded-lg bg-white/60 border border-gray-100">
-                  <div>
-                    <p className="text-sm font-medium text-slate-700">
-                      Bus Route
-                    </p>
-                    <p className="text-xs text-slate-500">Download</p>
-                  </div>
-                  <a
-                    href="#"
-                    className="inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md border bg-white hover:bg-slate-50 shadow-sm"
-                    aria-label="Download Bus Route"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 3v12m0 0l4-4m-4 4l-4-4M21 21H3"
-                      />
-                    </svg>
-                    Download
-                  </a>
-                </li>
-              </ul>
-            </aside>
+//                 <li className="flex items-center justify-between p-3 rounded-lg bg-white/60 border border-gray-100">
+//                   <div>
+//                     <p className="text-sm font-medium text-slate-700">
+//                       Bus Route
+//                     </p>
+//                     <p className="text-xs text-slate-500">Download</p>
+//                   </div>
+//                   <a
+//                     href="#"
+//                     className="inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md border bg-white hover:bg-slate-50 shadow-sm"
+//                     aria-label="Download Bus Route"
+//                   >
+//                     <svg
+//                       xmlns="http://www.w3.org/2000/svg"
+//                       className="h-4 w-4"
+//                       fill="none"
+//                       viewBox="0 0 24 24"
+//                       stroke="currentColor"
+//                       stroke-width="2"
+//                       aria-hidden="true"
+//                     >
+//                       <path
+//                         stroke-linecap="round"
+//                         stroke-linejoin="round"
+//                         d="M12 3v12m0 0l4-4m-4 4l-4-4M21 21H3"
+//                       />
+//                     </svg>
+//                     Download
+//                   </a>
+//                 </li>
+//               </ul>
+//             </aside>
 
-            <main className="md:w-2/3 p-6">
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="text-xl font-semibold text-slate-800">NOTICE</h2>
-                <p className="text-sm text-slate-500">Latest updates</p>
-              </div>
+//             <main className="md:w-2/3 p-6">
+//               <div className="flex items-center justify-between mb-4">
+//                 <h2 className="text-xl font-semibold text-slate-800">NOTICE</h2>
+//                 <p className="text-sm text-slate-500">Latest updates</p>
+//               </div>
 
-              <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200 text-sm">
-                  <thead className="bg-slate-50">
-                    <tr>
-                      <th className="px-4 py-3 text-left font-medium text-slate-600">
-                        Title
-                      </th>
-                      <th className="px-4 py-3 text-left font-medium text-slate-600">
-                        Date
-                      </th>
-                      <th className="px-4 py-3 text-left font-medium text-slate-600">
-                        Action
-                      </th>
-                    </tr>
-                  </thead>
+//               <div className="overflow-x-auto">
+//                 <table className="min-w-full divide-y divide-gray-200 text-sm">
+//                   <thead className="bg-slate-50">
+//                     <tr>
+//                       <th className="px-4 py-3 text-left font-medium text-slate-600">
+//                         Title
+//                       </th>
+//                       <th className="px-4 py-3 text-left font-medium text-slate-600">
+//                         Date
+//                       </th>
+//                       <th className="px-4 py-3 text-left font-medium text-slate-600">
+//                         Action
+//                       </th>
+//                     </tr>
+//                   </thead>
 
-                  <tbody className="bg-white divide-y divide-gray-100">
-                    <tr>
-                      <td className="px-4 py-3">Details Of Curriculum</td>
-                      <td className="px-4 py-3 text-slate-600">14/04/2025</td>
-                      <td className="px-4 py-3">
-                        <a
-                          href="#"
-                          className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
-                          aria-label="View Details Of Curriculum on 14 April 2025"
-                        >
-                          View
-                        </a>
-                      </td>
-                    </tr>
+//                   <tbody className="bg-white divide-y divide-gray-100">
+//                     <tr>
+//                       <td className="px-4 py-3">Details Of Curriculum</td>
+//                       <td className="px-4 py-3 text-slate-600">14/04/2025</td>
+//                       <td className="px-4 py-3">
+//                         <a
+//                           href="#"
+//                           className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
+//                           aria-label="View Details Of Curriculum on 14 April 2025"
+//                         >
+//                           View
+//                         </a>
+//                       </td>
+//                     </tr>
 
-                    <tr>
-                      <td className="px-4 py-3">Annual Report</td>
-                      <td className="px-4 py-3 text-slate-600">17/08/2025</td>
-                      <td className="px-4 py-3">
-                        <a
-                          href="#"
-                          className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
-                          aria-label="View Annual Report on 17 August 2025"
-                        >
-                          View
-                        </a>
-                      </td>
-                    </tr>
+//                     <tr>
+//                       <td className="px-4 py-3">Annual Report</td>
+//                       <td className="px-4 py-3 text-slate-600">17/08/2025</td>
+//                       <td className="px-4 py-3">
+//                         <a
+//                           href="#"
+//                           className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
+//                           aria-label="View Annual Report on 17 August 2025"
+//                         >
+//                           View
+//                         </a>
+//                       </td>
+//                     </tr>
 
-                    <tr>
-                      <td className="px-4 py-3">Sports Calendar</td>
-                      <td className="px-4 py-3 text-slate-600">14/09/2025</td>
-                      <td className="px-4 py-3">
-                        <a
-                          href="#"
-                          className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
-                          aria-label="View Sports Calendar on 14 September 2025"
-                        >
-                          View
-                        </a>
-                      </td>
-                    </tr>
+//                     <tr>
+//                       <td className="px-4 py-3">Sports Calendar</td>
+//                       <td className="px-4 py-3 text-slate-600">14/09/2025</td>
+//                       <td className="px-4 py-3">
+//                         <a
+//                           href="#"
+//                           className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
+//                           aria-label="View Sports Calendar on 14 September 2025"
+//                         >
+//                           View
+//                         </a>
+//                       </td>
+//                     </tr>
 
-                    <tr>
-                      <td className="px-4 py-3">English Poetry</td>
-                      <td className="px-4 py-3 text-slate-600">01/10/2025</td>
-                      <td className="px-4 py-3">
-                        <a
-                          href="#"
-                          className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
-                          aria-label="View English Poetry on 1 October 2025"
-                        >
-                          View
-                        </a>
-                      </td>
-                    </tr>
+//                     <tr>
+//                       <td className="px-4 py-3">English Poetry</td>
+//                       <td className="px-4 py-3 text-slate-600">01/10/2025</td>
+//                       <td className="px-4 py-3">
+//                         <a
+//                           href="#"
+//                           className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
+//                           aria-label="View English Poetry on 1 October 2025"
+//                         >
+//                           View
+//                         </a>
+//                       </td>
+//                     </tr>
 
-                    <tr>
-                      <td className="px-4 py-3">Details Of Curriculum</td>
-                      <td className="px-4 py-3 text-slate-600">14/04/2025</td>
-                      <td className="px-4 py-3">
-                        <a
-                          href="#"
-                          className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
-                          aria-label="View second Details Of Curriculum entry"
-                        >
-                          View
-                        </a>
-                      </td>
-                    </tr>
+//                     <tr>
+//                       <td className="px-4 py-3">Details Of Curriculum</td>
+//                       <td className="px-4 py-3 text-slate-600">14/04/2025</td>
+//                       <td className="px-4 py-3">
+//                         <a
+//                           href="#"
+//                           className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
+//                           aria-label="View second Details Of Curriculum entry"
+//                         >
+//                           View
+//                         </a>
+//                       </td>
+//                     </tr>
 
-                    <tr>
-                      <td className="px-4 py-3">Annual Report</td>
-                      <td className="px-4 py-3 text-slate-600">17/08/2025</td>
-                      <td className="px-4 py-3">
-                        <a
-                          href="#"
-                          className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
-                          aria-label="View second Annual Report entry"
-                        >
-                          View
-                        </a>
-                      </td>
-                    </tr>
+//                     <tr>
+//                       <td className="px-4 py-3">Annual Report</td>
+//                       <td className="px-4 py-3 text-slate-600">17/08/2025</td>
+//                       <td className="px-4 py-3">
+//                         <a
+//                           href="#"
+//                           className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
+//                           aria-label="View second Annual Report entry"
+//                         >
+//                           View
+//                         </a>
+//                       </td>
+//                     </tr>
 
-                    <tr>
-                      <td className="px-4 py-3">Sports Calendar</td>
-                      <td className="px-4 py-3 text-slate-600">14/09/2025</td>
-                      <td className="px-4 py-3">
-                        <a
-                          href="#"
-                          className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
-                          aria-label="View second Sports Calendar entry"
-                        >
-                          View
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+//                     <tr>
+//                       <td className="px-4 py-3">Sports Calendar</td>
+//                       <td className="px-4 py-3 text-slate-600">14/09/2025</td>
+//                       <td className="px-4 py-3">
+//                         <a
+//                           href="#"
+//                           className="text-sm inline-flex items-center gap-2 px-2.5 py-1 rounded-md border bg-white hover:bg-slate-50"
+//                           aria-label="View second Sports Calendar entry"
+//                         >
+//                           View
+//                         </a>
+//                       </td>
+//                     </tr>
+//                   </tbody>
+//                 </table>
+//               </div>
 
-              <p className="mt-4 text-xs text-slate-500">
-                Dates are shown as DD/MM/YYYY.
-              </p>
-            </main>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+//               <p className="mt-4 text-xs text-slate-500">
+//                 Dates are shown as DD/MM/YYYY.
+//               </p>
+//             </main>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 // function Gallery() {
 //   return (
