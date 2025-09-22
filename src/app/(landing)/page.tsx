@@ -16,6 +16,8 @@ import Gallery from "@/app/(landing)/Gallery";
 import WhyUs from "@/app/(landing)/WhyUs";
 import UpcomingEvents from "@/app/(landing)/Events";
 import SiteFooter from "@/components/SiteFooter";
+import PrincipalMessage from "./PrincipleMessage";
+import Testimonials from "./Testimonial";
 
 export default function page() {
   return (
@@ -26,225 +28,227 @@ export default function page() {
       {/* <Hero2 /> */}
       <About />
 
-      <HighlightSection />
+      {/* <HighlightSection /> */}
 
-      <WhyUs />
       <Gallery />
+      <PrincipalMessage />
       <UpcomingEvents />
       {/* <SignUp2 /> */}
+      <Testimonials />
+      <WhyUs />
       <SignUp />
       <SiteFooter />
     </div>
   );
 }
 
-function Footer() {
-  return (
-    <div className="bg-[#006d70] text-white py-10">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-        {/* Logo & Social Icons */}
-        <div className="flex flex-col items-center md:items-start">
-          <img
-            src="/images/logo.png"
-            alt="Gyan Ganga Logo"
-            className="w-40 mb-6"
-          />
-          <div className="flex space-x-4 text-2xl">
-            <a href="#" className="hover:text-orange-400">
-              <FaLinkedin />
-            </a>
-            <a href="#" className="hover:text-orange-400">
-              <FaInstagram />
-            </a>
-            <a
-              href="mailto:gyangangaraipur@yahoo.co.in"
-              className="hover:text-orange-400"
-            >
-              <FaEnvelope />
-            </a>
-            <a href="#" className="hover:text-orange-400">
-              <FaXTwitter />
-            </a>
-          </div>
-        </div>
+// function Footer() {
+//   return (
+//     <div className="bg-[#006d70] text-white py-10">
+//       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+//         {/* Logo & Social Icons */}
+//         <div className="flex flex-col items-center md:items-start">
+//           <img
+//             src="/images/logo.png"
+//             alt="Gyan Ganga Logo"
+//             className="w-40 mb-6"
+//           />
+//           <div className="flex space-x-4 text-2xl">
+//             <a href="#" className="hover:text-orange-400">
+//               <FaLinkedin />
+//             </a>
+//             <a href="#" className="hover:text-orange-400">
+//               <FaInstagram />
+//             </a>
+//             <a
+//               href="mailto:gyangangaraipur@yahoo.co.in"
+//               className="hover:text-orange-400"
+//             >
+//               <FaEnvelope />
+//             </a>
+//             <a href="#" className="hover:text-orange-400">
+//               <FaXTwitter />
+//             </a>
+//           </div>
+//         </div>
 
-        {/* Address */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Address :</h3>
-          <p className="text-sm leading-relaxed">
-            12 KM BALODA BAZAR ROAD,
-            <br />
-            NEAR VIDHAN SABHA, NARDHA,
-            <br />
-            RAIPUR [C.G.] Pin-493111
-          </p>
-          <h3 className="text-lg font-semibold mt-6 mb-2">Contact Info :</h3>
-          <p className="text-sm leading-relaxed">
-            0771-2284716
-            <br />
-            0771-2284816
-          </p>
-        </div>
+//         {/* Address */}
+//         <div>
+//           <h3 className="text-lg font-semibold mb-3">Address :</h3>
+//           <p className="text-sm leading-relaxed">
+//             12 KM BALODA BAZAR ROAD,
+//             <br />
+//             NEAR VIDHAN SABHA, NARDHA,
+//             <br />
+//             RAIPUR [C.G.] Pin-493111
+//           </p>
+//           <h3 className="text-lg font-semibold mt-6 mb-2">Contact Info :</h3>
+//           <p className="text-sm leading-relaxed">
+//             0771-2284716
+//             <br />
+//             0771-2284816
+//           </p>
+//         </div>
 
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a href="#" className="hover:text-orange-400">
-                ● ABOUT
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-400">
-                ● NEWS
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-400">
-                ● GALLERY
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-400">
-                ● TERMS
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-400">
-                ● PRIVACY
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-400">
-                ● CONTACT
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-400">
-                ● INFRASTRUCTURE
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-400">
-                ● TRANSFER CERTIFICATE
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-400">
-                ● MANDATORY DISCLOSURE
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-400">
-                ● DOWNLOADABLE
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+//         {/* Quick Links */}
+//         <div>
+//           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
+//           <ul className="space-y-2 text-sm">
+//             <li>
+//               <a href="#" className="hover:text-orange-400">
+//                 ● ABOUT
+//               </a>
+//             </li>
+//             <li>
+//               <a href="#" className="hover:text-orange-400">
+//                 ● NEWS
+//               </a>
+//             </li>
+//             <li>
+//               <a href="#" className="hover:text-orange-400">
+//                 ● GALLERY
+//               </a>
+//             </li>
+//             <li>
+//               <a href="#" className="hover:text-orange-400">
+//                 ● TERMS
+//               </a>
+//             </li>
+//             <li>
+//               <a href="#" className="hover:text-orange-400">
+//                 ● PRIVACY
+//               </a>
+//             </li>
+//             <li>
+//               <a href="#" className="hover:text-orange-400">
+//                 ● CONTACT
+//               </a>
+//             </li>
+//             <li>
+//               <a href="#" className="hover:text-orange-400">
+//                 ● INFRASTRUCTURE
+//               </a>
+//             </li>
+//             <li>
+//               <a href="#" className="hover:text-orange-400">
+//                 ● TRANSFER CERTIFICATE
+//               </a>
+//             </li>
+//             <li>
+//               <a href="#" className="hover:text-orange-400">
+//                 ● MANDATORY DISCLOSURE
+//               </a>
+//             </li>
+//             <li>
+//               <a href="#" className="hover:text-orange-400">
+//                 ● DOWNLOADABLE
+//               </a>
+//             </li>
+//           </ul>
+//         </div>
+//       </div>
 
-      {/* Stay Updated */}
-      <div className="text-center mt-10">
-        <p className="text-base font-medium">Stay Updated</p>
-        <p className="text-sm text-gray-200">
-          Get the latest updates on security technology & industry insights.
-        </p>
-      </div>
+//       {/* Stay Updated */}
+//       <div className="text-center mt-10">
+//         <p className="text-base font-medium">Stay Updated</p>
+//         <p className="text-sm text-gray-200">
+//           Get the latest updates on security technology & industry insights.
+//         </p>
+//       </div>
 
-      {/* Copyright */}
-      <div className="text-center mt-6 text-sm border-t border-white/20 pt-4">
-        © 2025 Gyan Ganga Educational Academy
-      </div>
-    </div>
-  );
-}
+//       {/* Copyright */}
+//       <div className="text-center mt-6 text-sm border-t border-white/20 pt-4">
+//         © 2025 Gyan Ganga Educational Academy
+//       </div>
+//     </div>
+//   );
+// }
 
-function SignUp2() {
-  return (
-    <>
-      <div className="flex justify-between mx-auto my-20 px-10 bg-green-500">
-        <div>
-          <Image
-            src="/images/School.avif"
-            alt="School Building"
-            width={500}
-            height={900}
-            className=" object-cover"
-          />
-        </div>
-        <div className=" w-4xl">
-          <h1>Experience Gyan Ganga Up Close !</h1>
-          <p>
-            Curious to see what makes Gyan Ganga truly special? Fill out the
-            form below to book a guided campus tour and explore our learning
-            spaces, modern facilities, and student-friendly environment. It’s
-            the perfect way to understand the quality, care, and authenticity we
-            bring to every corner of your child’s educational journey. We’d love
-            to show you around!
-          </p>
+// function SignUp2() {
+//   return (
+//     <>
+//       <div className="flex justify-between mx-auto my-20 px-10 bg-green-500">
+//         <div>
+//           <Image
+//             src="/images/School.avif"
+//             alt="School Building"
+//             width={500}
+//             height={900}
+//             className=" object-cover"
+//           />
+//         </div>
+//         <div className=" w-4xl">
+//           <h1>Experience Gyan Ganga Up Close !</h1>
+//           <p>
+//             Curious to see what makes Gyan Ganga truly special? Fill out the
+//             form below to book a guided campus tour and explore our learning
+//             spaces, modern facilities, and student-friendly environment. It’s
+//             the perfect way to understand the quality, care, and authenticity we
+//             bring to every corner of your child’s educational journey. We’d love
+//             to show you around!
+//           </p>
 
-          <div className="max-w-md mx-auto mt-10 p-6 border rounded-lg shadow-sm bg-white">
-            <h2 className="text-2xl font-semibold mb-6 text-center">Sign Up</h2>
+//           <div className="max-w-md mx-auto mt-10 p-6 border rounded-lg shadow-sm bg-white">
+//             <h2 className="text-2xl font-semibold mb-6 text-center">Sign Up</h2>
 
-            <form className="space-y-4">
-              {/* Name */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
+//             <form className="space-y-4">
+//               {/* Name */}
+//               <div>
+//                 <label className="block text-sm font-medium text-gray-700 mb-1">
+//                   Name
+//                 </label>
+//                 <input
+//                   type="text"
+//                   placeholder="Enter your name"
+//                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//                 />
+//               </div>
 
-              {/* Contact */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Contact
-                </label>
-                <input
-                  type="tel"
-                  placeholder="Enter your contact number"
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
+//               {/* Contact */}
+//               <div>
+//                 <label className="block text-sm font-medium text-gray-700 mb-1">
+//                   Contact
+//                 </label>
+//                 <input
+//                   type="tel"
+//                   placeholder="Enter your contact number"
+//                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//                 />
+//               </div>
 
-              {/* Email */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
+//               {/* Email */}
+//               <div>
+//                 <label className="block text-sm font-medium text-gray-700 mb-1">
+//                   Email
+//                 </label>
+//                 <input
+//                   type="email"
+//                   placeholder="Enter your email"
+//                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//                 />
+//               </div>
 
-              {/* Submit Button */}
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
-              >
-                Sign Up
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
+//               {/* Submit Button */}
+//               <button
+//                 type="submit"
+//                 className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
+//               >
+//                 Sign Up
+//               </button>
+//             </form>
+//           </div>
+//         </div>
+//       </div>
 
-      <div className=" text-center my-20 px-10">
-        <h1>Inspiring today’s learners to become tomarrow’s leaders.</h1>
-        <Link href="#">
-          <button>Apply Now</button>
-        </Link>
-      </div>
-    </>
-  );
-}
+//       <div className=" text-center my-20 px-10">
+//         <h1>Inspiring today’s learners to become tomarrow’s leaders.</h1>
+//         <Link href="#">
+//           <button>Apply Now</button>
+//         </Link>
+//       </div>
+//     </>
+//   );
+// }
 
 // function UpcomingEvents() {
 //   return (
